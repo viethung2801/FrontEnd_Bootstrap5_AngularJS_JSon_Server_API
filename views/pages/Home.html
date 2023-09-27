@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- CSS owl carosel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+    integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/home.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body >
+  <div class="container">
+    <div class="row bg-danger p-3 rounded-2">
+      <!-- Hàng bán chạy -->
+      <div class="best-title text- text-white mb-3 fs-2">
+        <i class="bi bi-lightning-fill"></i>
+        HÀNG BÁN CHẠY
+      </div>
+      <!-- owl Carosel -->
+      <div class="owl-carousel owl-theme " ng-init="initCarousel()">
+
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/08e56cf3-2db9-4087-8c0c-29f48c49193f" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product1.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a href="#!/detail/08e56cf3-2db9-4087-8c0c-29f48c49193f" class="text-decoration-none" >
+                <h6 class="card-title link-dark product-name">LILIES POLO SHIRT</h6>
+              </a>
+              <p class="card-text">490.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/bba18cfd-4f85-4608-b101-4247c0bf6531" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product3.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a class="text-decoration-none" href="#!/detail/bba18cfd-4f85-4608-b101-4247c0bf6531">
+                <h6 class="card-title link-dark product-name">TRACER SLEEVES BOXY SHIRT</h6>
+              </a>
+              <p class="card-text">720.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/d924168c-3863-40f4-8ce8-e27d12eac43f" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product5.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a class="text-decoration-none" href="#!/detail/d924168c-3863-40f4-8ce8-e27d12eac43f">
+                <h6 class="card-title link-dark product-name">ORDITAG SLEEVES BOXY SHIRT</h6>
+              </a>
+              <p class="card-text">490.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/45f6a1e8-62c4-4f25-8250-8a8db2cc236f" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product9.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a class="text-decoration-none" href="#!/detail/45f6a1e8-62c4-4f25-8250-8a8db2cc236f">
+                <h6 class="card-title link-dark product-name">DEEP DIVE BABY TEE</h6>
+              </a>
+              <p class="card-text">300.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/e0af4e0b-267c-4f52-b97a-44795c47afa5" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product10.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a class="text-decoration-none" href="#!/detail/e0af4e0b-267c-4f52-b97a-44795c47afa5">
+                <h6 class="card-title link-dark product-name">BUCKLE LIPS TEE</h6>
+              </a>
+              <p class="card-text">500.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/4962ccef-ab77-4e3e-9ee6-a91ba7f16987" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product2.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a class="text-decoration-none" href="#!/detail/4962ccef-ab77-4e3e-9ee6-a91ba7f16987">
+                <h6 class="card-title link-dark product-name">Hades Jaket</h6>
+              </a>
+              <p class="card-text">420.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/1640f331-0ef6-46b6-b4d7-96aaf0d828a8" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product4.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a href="#!/detail/1640f331-0ef6-46b6-b4d7-96aaf0d828a8" class="text-decoration-none">
+                <h6 class="card-title link-dark product-name">HADES X SOXSOCKS TEE</h6>
+              </a>
+              <p class="card-text">420.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <a href="#!/detail/939fe56d-8f57-4099-87f8-f8173cce9191" class="product-image row position-relative d-flex align-items-end">
+              <img class="card-img-top col-12" src="/utilities/images/products/product6.jpg" alt="Title">
+              <div class="product-control text-center position-absolute overlay ">
+                <button class="col-5 btn btn-dark" type="button">Mua Ngay</button>
+                <button class="col-5 btn btn-dark" type="button">Thêm vào giỏ</button>
+              </div>
+            </a>
+            <div class="card-body text-center">
+              <a class="text-decoration-none" href="#!/detail/939fe56d-8f57-4099-87f8-f8173cce9191">
+                <h6 class="card-title link-dark product-name">SIP ON YOUR LIPS BABY TEE</h6>
+              </a>
+              <p class="card-text">490.000 đ</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <a href="#!/products/0" class="btn btn-outline-light mx-auto col-5 col-md-3">Xem tất cả >></a>
+
+    </div>
+
+    <!-- Sản phẩm mới -->
+    <div class="row mt-5 border-2">
+      <div class="text-center text-decoration-underline fs-1 text-secondary">Sản Phẩm Mới</div>
+      <div class="row">
+        <div class="card col-6 col-md-3 border-0" ng-repeat="i in products | limitTo:12">
+          <a href="#!/detail/{{i.id}}" class="product-image row position-relative d-flex align-items-end">
+            <img class="card-img-top col-12" src="/utilities/images/products/{{i.images[0].url}}" alt="Title">
+            <div class="product-control text-center position-absolute overlay ">
+              <button class="col-5 btn btn-dark" type="button">Mua ngay</button>
+              <button class="col-5 btn btn-dark " type="button">Thêm vào giỏ</button>
+            </div>
+          </a>
+          <div class="card-body text-center">
+            <a class="text-decoration-none" href="#!/detail/{{i.id}}">
+              <h6 class="card-title link-dark product-name">{{i.name}}</h6>
+            </a>
+            <p class="card-text">{{i.price | currency:'đ '}}</p>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Xem tất cả -->
+      <a href="#!/products/0" class="btn btn-danger text-center mx-auto col-5 col-md-3 mt-2">Xem tất cả >></a>
+    </div>
+  </div>
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--JS Owl carosel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

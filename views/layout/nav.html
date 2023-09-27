@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BoongDC.vn</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-4 col-4">
+                            <a href="#!/">
+                                <img class="col-md-10 col-10" src="/utilities/images/logo.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-1 col-7 order-md-last my-auto">
+                            <div class="float-end">
+                                <a href="#!/account/login" class="nav-link"><i class="bi bi-person-circle fs-3"></i></a>
+                            </div>
+                            <div class="cart-icon-container float-end">
+                                <a href="#!/shoppingcart" class="nav-link">
+                                    <span class="badge bg-danger">{{numProduct}}</span>
+                                    <i class="bi bi-bag-fill fs-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="navbar-toggler d-lg-none col-1 my-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="col-md-7 my-auto">
+                            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="#!/products/0" aria-current="page">ALL<span
+                                                class="visually-hidden">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="#!/" aria-current="page">HOME<span
+                                                class="visually-hidden">(current)</span></a>
+                                    </li>
+                                    <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="dropdownId"
+                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">TOPs</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item" href="#">T-SHIRTs & POLO SHIRTs</a>
+                                            <a class="dropdown-item" href="#">SWEATERs & HOODIEs</a>
+                                            <a class="dropdown-item" href="#">LONGSLEEVEs</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="dropdownId"
+                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">BOTTOMs</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                            <a class="dropdown-item" href="#">PANTs</a>
+                                            <a class="dropdown-item" href="#">SHORTs</a>
+                                        </div>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="#footerContainer"
+                                            aria-current="page">CONTACT<span
+                                                class="visually-hidden">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="#!/about" aria-current="page">ABOUT<span
+                                                class="visually-hidden">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link fw-bold" href="#!/manager" aria-current="page">MANAGER<span
+                                                class="visually-hidden">(current)</span></a>
+                                    </li>
+                                </ul>
+
+                                <form class="d-flex my-auto my-lg-0">
+                                    <div class="input-group">
+                                        <input id="txtSearch" ng-model="txtSearch" type="text" class="form-control"
+                                            placeholder="Tìm kiếm" ng-change="search()">
+                                        <span class="input-group-text btn btn-outline-dark"
+                                            ng-click="search()">{{inputValue}}<i class="bi bi-search"></i></span>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

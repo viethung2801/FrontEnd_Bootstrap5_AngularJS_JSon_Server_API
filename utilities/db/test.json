@@ -1,0 +1,72 @@
+{
+    "user": [
+      {
+        "id": "91f96f35-c732-4c53-8b57-f63afff34c7a",
+        "fullName": "Dương Việt Hùng",
+        "PhoneNumber": "0375773850",
+        "email": "duongviethung2003@gmail.com",
+        "password": "hung2003",
+        "address": "Đại Yên - Chương Mỹ - Hà Nội",
+        "position": "0"
+      }
+    ],
+    "oder": [
+      {
+        "id": "e0712e3c-a455-4436-af2d-6b204170c236",
+        "date": "30-01-2023",
+        "status": 0,
+        "totalPrice": 305000,
+        "userId": "91f96f35-c732-4c53-8b57-f63afff34c7a"
+      }
+    ],
+    "oderDetail": [
+      {
+        "id": "3563e289-eb33-40af-8f8d-fa88ccb4fee7",
+        "productId": "9ec33d39-653d-40a8-9553-9a9b06f9e709",
+        "quantity": 1,
+        "oderId": "e0712e3c-a455-4436-af2d-6b204170c236"
+      }
+    ],
+    "category": [
+      {
+        "id": "b23cfe71-3a80-4ac6-b1b9-a55ade2fb1c2",
+        "name": "TEE"
+      },
+      {
+        "id": "b23cfe71-3a80-4ac6-b1b9-a55ade2fb1c2",
+        "name": "Pant"
+      },
+      {
+        "id": "b23cfe71-3a80-4ac6-b1b9-a55ade2fb1c2",
+        "name": "Hoodie"
+      },
+      {
+        "id": "b23cfe71-3a80-4ac6-b1b9-a55ade2fb1c2",
+        "name": "Jacket"
+      }
+    ],
+    "product": [
+      {
+        "id": "9ec33d39-653d-40a8-9553-9a9b06f9e709",
+        "name": "T-shirt A",
+        "description": "T-shirt New Collection",
+        "price": 305000,
+        "categoryId": "b23cfe71-3a80-4ac6-b1b9-a55ade2fb1c2"
+      }
+    ],
+    "image": [
+      {
+        "id": "f2a6d88b-3ade-4108-b583-e580cd887893",
+        "url": "",
+        "productId": "9ec33d39-653d-40a8-9553-9a9b06f9e709"
+      }
+    ],
+    "shoppingCart": [
+      {
+        "id": "785e01e6-b401-4680-9d34-914bcffc9fce",
+        "productId": "9ec33d39-653d-40a8-9553-9a9b06f9e709",
+        "quantity": 1,
+        "userId":""
+      }
+    ]
+  }

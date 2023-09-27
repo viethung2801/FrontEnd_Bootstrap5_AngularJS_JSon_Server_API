@@ -1,0 +1,19 @@
+.product-image{
+    position: relative;
+    cursor: pointer;
+}
+.product-name:hover{
+    text-decoration: underline;
+}
+.overlay {
+    font-size: 10px;
+    opacity: 0;/* ẩn*/
+    transition: opacity 0.3s ease-in-out;
+    
+}
+.overlay button{
+    font-size: 10px;
+}
+.product-image:hover .overlay {
+    opacity: 1;/* hiện*/
+  }

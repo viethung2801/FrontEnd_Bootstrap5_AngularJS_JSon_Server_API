@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Title -->
+            <h3 class="heading-medium fs-4">Giỏ hàng của bạn</h3>
+            <!-- Table -->
+            <div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Thông tin sản phẩm</th>
+                                <th scope="col">Đơn giá</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Thành tiền</th>
+                                <th scope="col">Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="" ng-repeat="p in productCart">
+                                <td scope="row" class="row">
+                                    <div class="product-detail col-md-7 col-12 my-auto">
+                                        <div class="detail-name h6">
+                                            <a href="#!/detail/{{p.product.id}}"
+                                                class=" text-decoration-none">{{p.product.name}}</a>
+                                        </div>
+                                </td>
+                                <td class="my-auto align-middle">
+                                    {{p.product.price | currency:'đ '}}
+                                </td>
+                                <td class="align-middle">
+                                    <input type="number" id="quantity{{$index}}" ng-model="p.quantity" ng-change="changeQuantity($index)"  value="{{p.quantity}}" min="1">
+                                </td>
+                                <td class="align-middle">{{p.quantity * p.product.price |currency:'đ '}}</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn" ng-click="deleteCart($index)">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <!-- Total -->
+                <div class="col-md-4 col-8 row float-end">
+                    <div class="col-md-6 col-12 fw-bold">Tổng Tiền:</div>
+                    <div class="col-md-6 col-12 fw-bold text-danger text-end">{{totalPrice |currency:'đ '}}</div>
+                    <button type="button" class="btn btn-dark rounded-0" ng-click="pay()">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body > 
+    <div class="container mt-5 mb-5 pt-5">
+        <div class="row">
+            <div class="col-8 mx-auto card border-0">
+                <div class="card-header text-center bg-white h2 border-0">
+                    <p class="my-auto">Đăng Kí</p>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <form class="was-validated" name="registerFrom">
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" ><i class="bi bi-person-fill"></i></span>
+                            <input type="text" name="txtFullname" class="form-control" placeholder="Họ và tên" ng-model="fullName" required>
+                            <span class="input-group-text text-danger bg-body border-0" >*</span>
+                        </div>
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" ><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" name="txtEmail" class="form-control" placeholder="Email" ng-model="email" required>
+                            <span class="input-group-text text-danger bg-body border-0" >*</span>
+                        </div>
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" ><i class="bi bi-telephone-fill"></i></span>
+                            <input type="text" name="txtSDT" class="form-control" placeholder="Số điện thoại" ng-model="phoneNumber" required>
+                            <span class="input-group-text text-danger bg-body border-0" >*</span>
+                        </div>
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" ><i class="bi bi-key-fill"></i></span>
+                            <input type="text" name="txtPassword" class="form-control" placeholder="Mật khẩu" ng-model="password" required>
+                            <span class="input-group-text text-danger bg-body border-0" >*</span>
+                        </div>
+                        <div class="input-group mb-5">
+                            <span class="input-group-text" ><i class="bi bi-globe-americas"></i></span>
+                            <input type="text" name="txtAddress" class="form-control" placeholder="Địa chỉ"ng-model="address" required>
+                            <span class="input-group-text text-danger bg-body border-0" >*</span>
+                        </div>
+                        <div class="mb-3 mt-4 row ps-3">
+                            <button class="btn btn-outline-dark col-3 fw-bold h2" type="button" ng-click="register()">Đăng Kí</button>
+                            <div class="col-8">
+                                <a class="text-dark fw-bold" href="#!/account/login"><i class="bi bi-arrow-left-circle fw-bold"></i> Quay lại Đăng Nhập</a>
+                                
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
